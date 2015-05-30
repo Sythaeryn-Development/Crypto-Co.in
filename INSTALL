@@ -1,0 +1,9 @@
+Building Crypto-Co.in QT GUI Wallet
+
+See doc/readme-qt.rst for instructions on building Crypto-Co.in QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Crypto-Co.in.
+
+See doc/build-*.txt for instructions on building Crypto-Co.ind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Crypto-Co.in.
