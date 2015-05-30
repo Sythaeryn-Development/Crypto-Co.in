@@ -2570,7 +2570,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "Name: Dogecoin Dark";
+        const char* pszTimestamp = "This Coin was made with tender love and care on 5/29/2015 @ 10:00PM PST, Special thanks to  Blaksmith for the help. - Sythaeryn.Foxfire@gmail.com";
         CTransaction txNew;
         txNew.nTime = nChainStartTime;
         txNew.vin.resize(1);
@@ -2583,9 +2583,9 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1412878964; // epochtimestamp 1412539141
+        block.nTime    = 1432955898; // epochtimestamp 1412539141
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 1473191;
+        block.nNonce   = 1166860;
 
         //// debug print
         block.print();
@@ -2594,7 +2594,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nTime = %u \n", block.nTime);
         printf("block.nNonce = %u \n", block.nNonce);
 
-        assert(block.hashMerkleRoot == uint256("0x1c83275d9151711eec3aec37d829837cc3c2730b2bdfd00ec5e8e5dce675fd00")); //merkleroot of CCi
+        assert(block.hashMerkleRoot == uint256("0x0f293a905b81416d016e6796ac7e8c417dadc80ea6372f13477c3ce95b24fdbe")); //merkleroot of CCi
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
 
         // Start new block file
