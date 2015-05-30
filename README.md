@@ -2,8 +2,8 @@ Crypto-Co.in [CCi] Source Code
 Algorithm: scrypt
 PoW
 Blocktime: 30seconds
-RPC port: 20102
-P2P port: 21102
+RPC port: 40421
+P2P port: 40420
 
 Blockreward: 
 
@@ -29,8 +29,8 @@ Approximately total reward: 13 Billion (13,000,000,000) during first six months 
 
 
 to clone and compile:
-git clone https://github.com/cci/dogedsource
-cd dogedsource/src
+git clone https://github.com/Sythaeryn-Development/Crypto-Co.in.git
+cd Crypto-Co.in/src
 make -f makefile.unix
 
 if you have never compiled a wallet in linux before, here are the dependencies you will need:
@@ -55,9 +55,9 @@ apt-get install libboost-thread-dev libssl-dev libminiupnpc8
 
 apt-get install git
 
-git clone https://github.com/cci/dogedsource
+git clone https://github.com/Sythaeryn-Development/Crypto-Co.in.git
 
-cd dogedsource/src
+cd Crypto-Co.in/src
 
 make -f makefile.unix
 
@@ -65,7 +65,7 @@ then ./crypto-co.ind -daemon
 
 (youll get a message telling you to make a conf file)
 
-then make a Crypto-Co.in.conf file in the newly created ~/.Crypto-Co.in folder
+then make a crypto-co.in.conf file in the newly created ~/.crypto-co.in folder
 
-then go back into the /dogedsource/src folder and "./crypto-co.ind -daemon" again
+then go back into the /Crypto-Co.in/src folder and "./crypto-co.ind -daemon" again
 
